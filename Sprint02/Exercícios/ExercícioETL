@@ -1,0 +1,39 @@
+import csv
+from collections import Counter
+
+caminho = r"C:\Users\twvin\OneDrive\Área de Trabalho\Compass.UOL\Sprint02\Exercícios\actors.csv"
+
+with open(caminho, encoding="utf-8-sig") as arq:
+    lista = list(csv.DictReader(arq))
+
+# etapa 1
+maior = max(lista, key=lambda x: int(x["Number of Movies"]))
+with open("etapa-1.txt", "w", encoding="utf-8") as arq:
+    arq.write(f"{maior['Actor']} - {maior['Number of Movies']}")
+
+# etapa 2
+valores = [float(x["Gross"]) for x in lista]
+media = round(sum(valores) / len(valores), 2)
+with open("etapa-2.txt", "w", encoding="utf-8") as arq:
+    arq.write(str(media))
+
+# etapa 3
+top = max(lista, key=lambda x: float(x["Average per Movie"]))
+with open("etapa-3.txt", "w", encoding="utf-8") as arq:
+    arq.write(f"{top['Actor']} - {top['Average per Movie']}")
+
+# etapa 4
+nomes = [x["#1 Movie"] for x in lista]
+conta = Counter(nomes)
+mais = sorted(conta.items(), key=lambda x: (-x[1], x[0]))
+
+with open("etapa-4.txt", "w", encoding="utf-8") as arq:
+    for i, (nome, qtd) in enumerate(mais, start=1):
+        arq.write(f"{i} - O filme {nome} aparece {qtd} vez(es) no dataset\n")
+
+# etapa 5
+todos = sorted(lista, key=lambda x: float(x["Total Gross"]), reverse=True)
+
+with open("etapa-5.txt", "w", encoding="utf-8") as arq:
+    for item in todos:
+        arq.write(f"{item['Actor']} - {item['Total Gross']}\n")
