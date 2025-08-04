@@ -1,0 +1,16 @@
+services:
+  etl:
+    build: 
+      context: ../Etapa3
+      dockerfile: Dockerfile
+    volumes:
+      - .:/volume
+
+  job:
+    build:
+      context: ../Etapa4
+      dockerfile: Dockerfile
+    volumes:
+      - .:/volume
+    depends_on: #o job.py só roda depois do etl.py
+      - etl 

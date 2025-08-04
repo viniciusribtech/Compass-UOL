@@ -1,0 +1,18 @@
+Q1:
+--- Artista que mais aparece: Taylor Swift 
+Maior média de faturamento bruto: Taylor Swift
+
+Q2:
+--- Turnê: Renaissance World Tour 
+Artista: Beyoncé 
+Média: 10353571.0
+
+Q3:
+--- 3 shows mais lucrativos:
+Taylor Swift - The Eras Tour †
+13928571.43
+Beyoncé - Renaissance World Tour
+10353571.43
+Taylor Swift - Reputation Stadium Tour
+7600846.21
+
