@@ -45,3 +45,10 @@ O próximo exercício foi no AWS Lambda, onde deveria ser criado um bucket e com
 Para isso, precisei criar uma função de Lambda e adicionar uma camada chamada PandasLayer, para que o Lambda pudesse ter acesso à biblioteca e conseguir executar o código a seguir.
 <img src="../Sprint04/Evidências/AWSLambda-funcao.png" alt="Função Lambda" width=500>
 <img src="../Sprint04/Evidências/AWSLambda-codigo.png" alt="Código Lambda" width=500>
+
+---
+<b>Nada foi adicionado à pasta Exercícios, pois o exercício foi adicionado em prints na pasta Evidências.</b>
+
+- [Pasta Evidências](../Sprint04/Evidências/)
+- [Pasta Desafio](../Sprint04/Desafio/)
+- [README Desafio](../Sprint04/Desafio/README.md)
