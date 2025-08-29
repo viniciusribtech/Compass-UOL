@@ -1,7 +1,7 @@
 import boto3
 
-arquivo1 = r"C:\Users\twvin\OneDrive\Área de Trabalho\Filmes+e+Series\movies.csv"
-arquivo2 = r"C:\Users\twvin\OneDrive\Área de Trabalho\Filmes+e+Series\series.csv"
+arquivo1 = "/app/data/movies.csv"
+arquivo2 = "/app/data/series.csv"
 bucket = "desafio-sprint5-vinicius"
 
 s3 = boto3.client(
