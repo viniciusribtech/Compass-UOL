@@ -35,7 +35,7 @@ def lambda_handler(event, context):
 
     dados = resposta.json()
 
-    caminho_arquivo = "Raw/API/JSON/TMDB/tmdb_populares.json"
+    caminho_arquivo = "Raw/API/JSON/TMDB/tmdb_top_rated.json"
 
     s3.put_object(
         Bucket=bucket,
