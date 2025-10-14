@@ -1,10 +1,9 @@
 # Desafio Sprint 5
 ## O que será analisado no desafio?
 ### Ação/Aventura
-- Quais os 10 filmes mais recentes com maior nota?
-- Quais os 10 filmes da década de 90 com maior nota?
-- Quão discrepante é essa diferença de nota?
-- A disponibilidade em streaming atual impacta na popularidade e nas avaliações desses filmes?
+- O quanto um período de guerra pode impactar na produção de filmes?
+- Qual as notas de filmes dessa época? (Primeira Guerra Mundial)
+- Agora, num contexto geral, qual a diferença de gênero na indústria de cinema?
 
 ## Passo a passo da execução do desafio
 ### Passo 1: 
